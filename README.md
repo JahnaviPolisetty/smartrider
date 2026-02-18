@@ -1,36 +1,181 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Airport Ride Pool — Smart Ride Sharing Platform
 
-## Getting Started
+An Uber-style airport ride pooling web application that allows users to share rides to the airport, reduce travel costs, and optimize vehicle usage through smart ride matching.
 
-First, run the development server:
+Built using Next.js, Node.js, Express, and Supabase, this project demonstrates full-stack development, authentication, real-time data handling, and modern UI design.
 
-```bash
+🌐 Live Demo
+
+🚀 Frontend: https://vercel.com/jahnavi-polisettys-projects/airport-ride-pool
+🔗 Backend API: https://airport-ride-pool.onrender.com/
+
+✨ Features
+🔐 Authentication
+
+Google OAuth login using Supabase
+
+Secure session handling
+
+Personalized welcome message
+
+🚖 Ride Pooling System
+
+Create ride requests
+
+Smart ride matching algorithm
+
+Seat availability tracking
+
+Automatic ride grouping
+
+📍 Smart Inputs
+
+Autocomplete for pickup locations & airports
+
+Real-time search suggestions
+
+📊 Ride Details
+
+Estimated price calculation
+
+Estimated arrival time
+
+Random cab number generation
+
+Live seat availability
+
+🎨 Modern UI (Uber/Rapido Style)
+
+Responsive design
+
+Light/Dark mode toggle
+
+Mobile-friendly layout
+
+Clean, modern ride cards
+
+⚡ Real-Time Updates
+
+Supabase real-time database sync
+
+Instant ride matching feedback
+
+🛠 Tech Stack
+Frontend
+
+Next.js 16
+
+React
+
+Tailwind CSS
+
+Supabase Client
+
+Backend
+
+Node.js
+
+Express.js
+
+Supabase (PostgreSQL)
+
+REST API
+
+Database
+
+Supabase PostgreSQL
+
+Row Level Security (RLS)
+
+Real-time subscriptions
+
+🗂 Project Structure
+airport-ride-pool/
+│
+├── app/                 # Next.js frontend
+│   ├── page.tsx
+│   └── lib/
+│
+├── backend/             # Node.js API
+│   ├── server.js
+│   ├── routes/
+│   └── supabaseClient.js
+│
+├── .env.local
+└── README.md
+
+⚙️ Setup Instructions
+1️⃣ Clone Repository
+git clone https://github.com/JahnaviPolisetty/AIRPORT-RIDE-POOL.git
+cd AIRPORT-RIDE-POOL
+
+2️⃣ Backend Setup
+cd backend
+npm install
+node server.js
+
+
+Create .env in backend:
+
+SUPABASE_URL=your_url
+SUPABASE_SERVICE_ROLE_KEY=your_key
+PORT=5000
+
+3️⃣ Frontend Setup
+cd ..
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create .env.local:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+NEXT_PUBLIC_SUPABASE_URL=your_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+NEXT_PUBLIC_API_URL=http://localhost:5000
 
-## Learn More
+🔐 Database Tables
 
-To learn more about Next.js, take a look at the following resources:
+ride_requests
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+rides
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ride_passengers
 
-## Deploy on Vercel
+Includes foreign keys, RLS policies, and real-time triggers.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📸 Screenshots
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+(Add screenshots later to impress recruiters)
+
+🎯 What I Learned
+
+Full-stack architecture
+
+Google OAuth integration
+
+Supabase real-time database
+
+Ride matching logic
+
+REST API design
+
+Modern UI/UX principles
+
+Deployment with Vercel & Render
+
+🚀 Future Improvements
+
+Payment integration
+
+Driver app
+
+Push notifications
+
+Map integration (Google Maps)
+
+AI-based ride optimization
+
+👩‍💻 Author
+
+Jahnavi Polisetty
+B.Tech CSE | Full Stack Developer | AI Enthusiast
