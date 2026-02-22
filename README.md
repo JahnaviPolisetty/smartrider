@@ -1,89 +1,104 @@
+#### 🚀 SMART RIDER
+## ✈️ Airport Ride Booking Web Application
+## 📌 Overview
 
+Smart Rider is a modern airport ride booking web application that allows users to authenticate, select ride options, and manage airport travel through a clean, responsive interface.
 
-🚀 Smart Rider — Airport Ride Booking App
-📌 Overview
+This project demonstrates real-world deployment using modern frontend technologies and cloud services.
 
-Smart Rider is a modern airport ride booking web application that allows users to authenticate, choose ride options, and manage airport travel through a clean and responsive interface.
+#### ✨ Features
+## 🔐 Authentication
 
-The app focuses on simplicity, usability, and real-world deployment using modern web technologies.
+Google login using Supabase Auth
 
-✨ Features
+## 🚗 Ride Booking
 
-🔐 Google authentication using Supabase
+Select airport ride options
 
-🚗 Select and manage airport rides
+Seat selection interface
 
-🎯 Seat selection interface
+Smooth booking flow
 
-📱 Fully responsive UI
+## 🎨 User Experience
 
-⚡ Smooth animations with Framer Motion
+Fully responsive design 📱
 
-🌙 Light/Dark theme support
+## Light & Dark theme 🌙
 
-☁️ Deployed frontend & backend services
+Smooth animations with Framer Motion ⚡
 
-🛠️ Tech Stack
-Frontend
+## ☁️ Deployment
 
-React (Vite + TypeScript)
+Frontend hosted on Vercel
+
+Backend services via Supabase / Render
+
+### Tech Stack
+### 🎯 Frontend
+
+React + Vite + TypeScript
 
 Tailwind CSS
 
 Framer Motion
 
-shadcn/ui components
+shadcn/ui
 
-Backend / Services
+## 🔧 Backend / Services
 
 Supabase (Authentication & Database)
 
-Render (API hosting, if applicable)
+Render (API hosting, if used)
 
-Deployment
-
-Vercel — Frontend hosting
-
-Render — Backend hosting
-
-📂 Project Structure
+## 📂 Project Structure
 airport-ride-pool/
 │
-├── app/ (Frontend)
+├── app/            # Frontend
 │   ├── src/
 │   ├── components/
 │   ├── pages/
 │   └── lib/
 │
-└── backend/ (if applicable)
-⚙️ Environment Variables
+└── backend/        # Backend (if applicable)
+## ⚙️ Environment Variables
 
-Create a .env file inside the frontend root:
+# Create .env inside frontend:
 
 VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_anon_key
+VITE_SUPABASE_ANON_KEY=your_key
 VITE_API_URL=your_backend_url
 🚀 Getting Started
-1️⃣ Clone the repository
 git clone https://github.com/JahnaviPolisetty/smartrider.git
 cd smartrider/app
-2️⃣ Install dependencies
 npm install
-3️⃣ Run the development server
 npm run dev
 
-App runs at:
+## App runs at:
 
 http://localhost:8080
 🌐 Live Demo
 
-Frontend: https://your-vercel-url.vercel.app
+## Frontend: https://your-vercel-url.vercel.app
 
-Backend: https://your-render-url.onrender.com
+## Backend: https://your-render-url.onrender.com
 
-(Update with your actual links)
+## 🖼️ Screenshots
+Landing Page
 
-🎯 Future Improvements
+Ride Selection
+
+Seat Selection
+
+(Create a screenshots/ folder and add images)
+
+### 🏗️ Architecture Overview
+User Browser
+     │
+     ▼
+Frontend (React + Vite) ───► Supabase Auth & Database
+     │
+     └──────► Render API (if used)
+## 🎯 Future Improvements
 
 Ride history tracking
 
@@ -91,14 +106,13 @@ Payment integration
 
 Real-time ride updates
 
-Shared ride matching (optional future feature)
+Shared ride matching
 
-👩‍💻 Author
+## 👩‍💻 Author
 
 Jahnavi Polisetty
-
 GitHub: https://github.com/JahnaviPolisetty
 
-📜 License
+## 📜 License
 
-This project is for educational and portfolio purposes.
+Educational & portfolio use.
