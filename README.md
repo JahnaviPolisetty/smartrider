@@ -1,181 +1,104 @@
-Airport Ride Pool — Smart Ride Sharing Platform
 
-An Uber-style airport ride pooling web application that allows users to share rides to the airport, reduce travel costs, and optimize vehicle usage through smart ride matching.
 
-Built using Next.js, Node.js, Express, and Supabase, this project demonstrates full-stack development, authentication, real-time data handling, and modern UI design.
+🚀 Smart Rider — Airport Ride Booking App
+📌 Overview
 
-🌐 Live Demo
+Smart Rider is a modern airport ride booking web application that allows users to authenticate, choose ride options, and manage airport travel through a clean and responsive interface.
 
-🚀 Frontend: https://vercel.com/jahnavi-polisettys-projects/airport-ride-pool
-🔗 Backend API: https://airport-ride-pool.onrender.com/
+The app focuses on simplicity, usability, and real-world deployment using modern web technologies.
 
 ✨ Features
-🔐 Authentication
 
-Google OAuth login using Supabase
+🔐 Google authentication using Supabase
 
-Secure session handling
+🚗 Select and manage airport rides
 
-Personalized welcome message
+🎯 Seat selection interface
 
-🚖 Ride Pooling System
+📱 Fully responsive UI
 
-Create ride requests
+⚡ Smooth animations with Framer Motion
 
-Smart ride matching algorithm
+🌙 Light/Dark theme support
 
-Seat availability tracking
+☁️ Deployed frontend & backend services
 
-Automatic ride grouping
-
-📍 Smart Inputs
-
-Autocomplete for pickup locations & airports
-
-Real-time search suggestions
-
-📊 Ride Details
-
-Estimated price calculation
-
-Estimated arrival time
-
-Random cab number generation
-
-Live seat availability
-
-🎨 Modern UI (Uber/Rapido Style)
-
-Responsive design
-
-Light/Dark mode toggle
-
-Mobile-friendly layout
-
-Clean, modern ride cards
-
-⚡ Real-Time Updates
-
-Supabase real-time database sync
-
-Instant ride matching feedback
-
-🛠 Tech Stack
+🛠️ Tech Stack
 Frontend
 
-Next.js 16
-
-React
+React (Vite + TypeScript)
 
 Tailwind CSS
 
-Supabase Client
+Framer Motion
 
-Backend
+shadcn/ui components
 
-Node.js
+Backend / Services
 
-Express.js
+Supabase (Authentication & Database)
 
-Supabase (PostgreSQL)
+Render (API hosting, if applicable)
 
-REST API
+Deployment
 
-Database
+Vercel — Frontend hosting
 
-Supabase PostgreSQL
+Render — Backend hosting
 
-Row Level Security (RLS)
-
-Real-time subscriptions
-
-🗂 Project Structure
+📂 Project Structure
 airport-ride-pool/
 │
-├── app/                 # Next.js frontend
-│   ├── page.tsx
+├── app/ (Frontend)
+│   ├── src/
+│   ├── components/
+│   ├── pages/
 │   └── lib/
 │
-├── backend/             # Node.js API
-│   ├── server.js
-│   ├── routes/
-│   └── supabaseClient.js
-│
-├── .env.local
-└── README.md
+└── backend/ (if applicable)
+⚙️ Environment Variables
 
-⚙️ Setup Instructions
-1️⃣ Clone Repository
-git clone https://github.com/JahnaviPolisetty/AIRPORT-RIDE-POOL.git
-cd AIRPORT-RIDE-POOL
+Create a .env file inside the frontend root:
 
-2️⃣ Backend Setup
-cd backend
+VITE_SUPABASE_URL=your_supabase_url
+VITE_SUPABASE_ANON_KEY=your_anon_key
+VITE_API_URL=your_backend_url
+🚀 Getting Started
+1️⃣ Clone the repository
+git clone https://github.com/JahnaviPolisetty/smartrider.git
+cd smartrider/app
+2️⃣ Install dependencies
 npm install
-node server.js
-
-
-Create .env in backend:
-
-SUPABASE_URL=your_url
-SUPABASE_SERVICE_ROLE_KEY=your_key
-PORT=5000
-
-3️⃣ Frontend Setup
-cd ..
-npm install
+3️⃣ Run the development server
 npm run dev
 
+App runs at:
 
-Create .env.local:
+http://localhost:8080
+🌐 Live Demo
 
-NEXT_PUBLIC_SUPABASE_URL=your_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
-NEXT_PUBLIC_API_URL=http://localhost:5000
+Frontend: https://your-vercel-url.vercel.app
 
-🔐 Database Tables
+Backend: https://your-render-url.onrender.com
 
-ride_requests
+(Update with your actual links)
 
-rides
+🎯 Future Improvements
 
-ride_passengers
-
-Includes foreign keys, RLS policies, and real-time triggers.
-
-📸 Screenshots
-
-(Add screenshots later to impress recruiters)
-
-🎯 What I Learned
-
-Full-stack architecture
-
-Google OAuth integration
-
-Supabase real-time database
-
-Ride matching logic
-
-REST API design
-
-Modern UI/UX principles
-
-Deployment with Vercel & Render
-
-🚀 Future Improvements
+Ride history tracking
 
 Payment integration
 
-Driver app
+Real-time ride updates
 
-Push notifications
-
-Map integration (Google Maps)
-
-AI-based ride optimization
+Shared ride matching (optional future feature)
 
 👩‍💻 Author
 
 Jahnavi Polisetty
-B.Tech CSE | Full Stack Developer | AI Enthusiast
+
+GitHub: https://github.com/JahnaviPolisetty
+
+📜 License
+
+This project is for educational and portfolio purposes.
